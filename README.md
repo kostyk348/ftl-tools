@@ -1,5 +1,8 @@
 # ftl-tools — распаковка и упаковка FTL `ftl.dat` (PKG-формат, Steam)
 
+[![Release](https://img.shields.io/github/v/release/kostyk348/ftl-tools?sort=semver&color=blue)](https://github.com/kostyk348/ftl-tools/releases)
+[![Last commit](https://img.shields.io/github/last-commit/kostyk348/ftl-tools?branch=main)](https://github.com/kostyk348/ftl-tools/commits/main)
+
 Формат полностью раскрыт из [Slipstream Mod Manager](https://github.com/Vhati/Slipstream-Mod-Manager) (`PkgPack.java`).
 Игровые данные (XML: `blueprints.xml`, `events_*.xml`, `img/`, `audio/`) лежат **открыто** внутри архива.
 
@@ -28,12 +31,15 @@ hash(path) = rotl32(hash, 27) ^ ord(lower(c)) — `pack_pkg.path_hash`
 
 ```bash
 # распаковать (3219 файлов за ~1 сек)
+
 python3 unpack_pkg.py "/path/FTL Faster Than Light/data/ftl.dat" ./ftl_unpacked
 
 # править данные игры
+
 $EDITOR ftl_unpacked/data/blueprints.xml
 
 # запаковать обратно
+
 python3 pack_pkg.py ./ftl_unpacked ./ftl_new.dat
 cp ./ftl_new.dat "/path/FTL Faster Than Light/data/ftl.dat"
 ```
