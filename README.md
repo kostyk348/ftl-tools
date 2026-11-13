@@ -1,7 +1,18 @@
+<div align="center">
+
+<img src="docs/banner.svg" alt="ftl-tools banner" width="1000">
+
 # ftl-tools — распаковка и упаковка FTL `ftl.dat` (PKG-формат, Steam)
+
+### FTL (Faster Than Light) ftl.dat PKG unpacker/packer
 
 [![Release](https://img.shields.io/github/v/release/kostyk348/ftl-tools?sort=semver&color=blue)](https://github.com/kostyk348/ftl-tools/releases)
 [![Last commit](https://img.shields.io/github/last-commit/kostyk348/ftl-tools?branch=main)](https://github.com/kostyk348/ftl-tools/commits/main)
+
+</div>
+
+---
+
 
 Формат полностью раскрыт из [Slipstream Mod Manager](https://github.com/Vhati/Slipstream-Mod-Manager) (`PkgPack.java`).
 Игровые данные (XML: `blueprints.xml`, `events_*.xml`, `img/`, `audio/`) лежат **открыто** внутри архива.
